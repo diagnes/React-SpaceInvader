@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'space_ageregular';
+    src: url('../fonts/space_age-webfont.woff2') format('woff2'),
+         url('../fonts/space_age-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#SpaceInvader {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.space-invader{
+  position: relative;
+  font-family: 'space_ageregular';
+  color: #8e44ad;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.space-invader p{
+  padding: 0 30px;
+  font-size: 30px;
+}
+.space-invader .stats{
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  background: transparent;
+
+}
+
+.space-invader h1{
+  padding: 0 30px;
+  font-size: 60px;
+}
+
+.space-invader a{
+  color: #f1c40f;
+  border: 1px solid #f1c40f;
+  padding: 15px 60px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.button-block{
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+}
+
+.space-invader a:hover{
+  color: #2c3e50;
+  border: 1px solid #2c3e50;
+}
+
+.space-invader.start{
+  background-image: url('../img/space.gif');
+}
+
+.space-invader.pause{
+  background: #bdc3c7;
+  color: #ecf0f1;
+}
+
+.space-invader.ended{
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.space-invader.begin{
+  background-image: url('../img/welcome.gif');
+}
+
+.space-invader.win{
+  background-image: url('../img/win.gif');
+}
+
+.space-invader.loose{
+  background-image: url('../img/loose.gif');
+}
+
+.space-invader .control p {
+    font-size: 12px;
+}
+
+.space-invader .control img {
+    width: 35%;
+}
+
+.row.controls {
+    position: absolute;
+    top: 40%;
+}
+
+.m-t-20 {
+    margin-top: 20px !important;
+}
